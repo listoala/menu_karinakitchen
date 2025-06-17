@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Comida Mexicana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Nuestro Menú Mexicano</h1>
+        <p>Elige tus platillos favoritos y envíanos tu pedido por WhatsApp.</p>
+    </header>
+
+    <main class="container">
+        <section id="menu-items" class="menu-section">
+            <h2>🌮 Platillos</h2>
+            <div class="menu-item" data-name="Tacos al Pastor" data-price="10.50">
+                <img src="https://via.placeholder.com/100" alt="Tacos al Pastor">
+                <div class="item-details">
+                    <h3>Tacos al Pastor (3 uds.)</h3>
+                    <p>Deliciosos tacos con carne de cerdo marinada, piña y cilantro.</p>
+                    <p class="price">$10.50</p>
+                </div>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+
+            <div class="menu-item" data-name="Burrito de Carnitas" data-price="12.00">
+                <img src="https://via.placeholder.com/100" alt="Burrito de Carnitas">
+                <div class="item-details">
+                    <h3>Burrito de Carnitas</h3>
+                    <p>Gran burrito relleno de carnitas, arroz, frijoles y pico de gallo.</p>
+                    <p class="price">$12.00</p>
+                </div>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+
+            <div class="menu-item" data-name="Quesadillas de Queso" data-price="8.00">
+                <img src="https://via.placeholder.com/100" alt="Quesadillas de Queso">
+                <div class="item-details">
+                    <h3>Quesadillas de Queso (2 uds.)</h3>
+                    <p>Tortillas de harina con queso derretido, servidas con guacamole.</p>
+                    <p class="price">$8.00</p>
+                </div>
+                <button class="add-to-cart">Agregar</button>
+            </div>
+             </section>
+
+        <aside id="cart" class="cart-section">
+            <h2>🛒 Tu Pedido</h2>
+            <ul id="cart-items">
+                </ul>
+            <p class="total">Total: $<span id="cart-total">0.00</span></p>
+            <div class="customer-info">
+                <label for="customer-name">Tu Nombre:</label>
+                <input type="text" id="customer-name" placeholder="Escribe tu nombre aquí...">
+            </div>
+            <button id="send-order">Enviar Pedido por WhatsApp</button>
+        </aside>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
