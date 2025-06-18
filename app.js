@@ -1,7 +1,7 @@
 // --- CONFIGURACIÓN ---
 // Reemplaza el número de abajo con tu número de teléfono.
 // ¡Importante! Usa el formato internacional con el '1' al principio para EEUU.
-const PHONE_NUMBER = '16232397605;
+const PHONE_NUMBER = '16232397605’;
 // --------------------
 
 
