@@ -3,49 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Comida Mexicana</title>
+    <title>Menu Mexican Food</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Nuestro Menú Mexicano</h1>
-        <p>Elige tus platillos favoritos y envíanos tu pedido por WhatsApp.</p>
+        <p>Choose your favorite dishes and send us your order.</p>
     </header>
 
     <main class="container">
         <section id="menu-items" class="menu-section">
             <h2>🌮 Platillos</h2>
             <div class="menu-item" data-name="Tacos al Pastor" data-price="10.50">
-                <img src="https://via.placeholder.com/100" alt="Tacos al Pastor">
+                <img src="imagenes/tacos_pastor.jpg" alt="Tacos al Pastor">
                 <div class="item-details">
                     <h3>Tacos al Pastor (3 uds.)</h3>
-                    <p>Deliciosos tacos con carne de cerdo marinada, piña y cilantro.</p>
+                    <p>Delicious tacos with marinated pork, pineapple and cilantro.</p>
                     <p class="price">$10.50</p>
                 </div>
-                <button class="add-to-cart">Agregar</button>
+                <button class="add-to-cart">Add</button>
             </div>
 
             <div class="menu-item" data-name="Burrito de Carnitas" data-price="12.00">
-                <img src="https://via.placeholder.com/100" alt="Burrito de Carnitas">
+                <img src="imagenes/burritos_carnita.jpeg" alt="burritos de carnita">
                 <div class="item-details">
                     <h3>Burrito de Carnitas</h3>
-                    <p>Gran burrito relleno de carnitas, arroz, frijoles y pico de gallo.</p>
+                    <p>Large burrito filled with carnitas, rice, beans and pico de gallo.</p>
                     <p class="price">$12.00</p>
                 </div>
                 <button class="add-to-cart">Agregar</button>
             </div>
 
             <div class="menu-item" data-name="Quesadillas de Queso" data-price="8.00">
-                <img src="https://via.placeholder.com/100" alt="Quesadillas de Queso">
+                <img src="imagenes/Quesadillas_queso.jpg" alt="Quesadillas de Queso">
                 <div class="item-details">
                     <h3>Quesadillas de Queso (2 uds.)</h3>
-                    <p>Tortillas de harina con queso derretido, servidas con guacamole.</p>
+                    <p>Flour tortillas with melted cheese, served with guacamole.</p>
                     <p class="price">$8.00</p>
                 </div>
                 <button class="add-to-cart">Agregar</button>
             </div>
-             </section>
+        </section>
 
         <aside id="cart" class="cart-section">
             <h2>🛒 Tu Pedido</h2>
@@ -54,9 +54,14 @@
             <p class="total">Total: $<span id="cart-total">0.00</span></p>
             <div class="customer-info">
                 <label for="customer-name">Tu Nombre:</label>
-                <input type="text" id="customer-name" placeholder="Escribe tu nombre aquí...">
+                <input type="text" id="customer-name" placeholder="Write your name here...">
             </div>
-            <button id="send-order">Enviar Pedido por WhatsApp</button>
+
+            <div class="order-actions">
+                <button id="call-btn">📞 Call to Order</button>
+                <button id="sms-btn">✉️ Send Order by Text</button>
+            </div>
+            
         </aside>
     </main>
 
