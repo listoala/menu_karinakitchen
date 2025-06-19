@@ -1,4 +1,4 @@
-/* Estilos Generales */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -26,7 +26,7 @@ header h1 {
     margin: 0;
 }
 
-/* Sección del Menú */
+/* Menu Section */
 .menu-section {
     flex: 3;
     margin-right: 20px;
@@ -81,7 +81,7 @@ header h1 {
     background-color: #218838;
 }
 
-/* Sección del Carrito */
+/* Cart Section */
 .cart-section {
     flex: 1;
     background-color: white;
@@ -128,18 +128,17 @@ header h1 {
     border-radius: 4px;
 }
 
-
-/* --- CAMBIO: Estilos para los nuevos botones de acción --- */
+/* Action Buttons Styles */
 .order-actions {
-    display: flex; /* Pone los botones uno al lado del otro */
-    gap: 10px; /* Crea un espacio entre los botones */
+    display: flex; 
+    gap: 10px; 
     margin-top: 20px;
 }
 
 .order-actions button {
-    flex-grow: 1; /* Hace que ambos botones ocupen el mismo espacio */
+    flex-grow: 1;
     border: none;
-    padding: 15px 5px; /* Más padding vertical, menos horizontal */
+    padding: 15px 5px;
     font-size: 1em;
     color: white;
     border-radius: 5px;
@@ -148,15 +147,13 @@ header h1 {
 }
 
 .order-actions button:hover {
-    opacity: 0.85; /* Un efecto suave al pasar el mouse */
+    opacity: 0.85;
 }
 
-/* Estilo específico para el botón de llamar */
 #call-btn {
-    background-color: #007bff; /* Un color azul para la llamada */
+    background-color: #007bff; /* Blue for call */
 }
 
-/* Estilo específico para el botón de SMS */
 #sms-btn {
-    background-color: #25D366; /* Un color verde para el mensaje */
+    background-color: #25D366; /* Green for text */
 }
